@@ -5,6 +5,7 @@
     --color-sombra: rgba(0, 0, 0, 0.7);
   }
 
+/*-----ESTILOS GENERALES--------------*/
 
 *{
     box-sizing: border-box;
@@ -23,6 +24,33 @@ h2,
 ul{
     margin: 0;
     padding: 0;  
+}
+
+/*-----MAQUETACIÓN PRINCIPAL CON GRID--------------*/
+
+.contiene_todo{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: "cabecera cabecera cabecera cabecera cabecera cabecera"
+                         "slider slider slider slider slider slider"
+                         "principal principal principal principal principal principal"
+                         "footer footer footer footer footer footer";
+}
+
+.header{
+    grid-area: cabecera;
+}
+
+.slider{
+    grid-area: slider;
+}
+
+.main{
+    grid-area: principal;
+}
+
+.footer{
+    grid-area: footer;
 }
 
 
@@ -127,10 +155,26 @@ h1{
    
 }
 
-.img_portada{
+img{
     width: 100%;
-    position: relative;
-    z-index: 5;
+}
+
+/*------------FOOTER-------------*/
+
+.footer{
+    background-color: var(--color-primero);
+}
+
+.footer > h2{
+    text-align: center;
+    color: var(--color-tercero);
+}
+
+.menciones_flaticon{
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: var(--color-tercero);
 }
 
 /* logo whatsapp */
