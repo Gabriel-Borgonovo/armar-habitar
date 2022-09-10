@@ -23,7 +23,7 @@ slider.insertAdjacentElement(`afterbegin`, sliderSectionLast);
 function moverDerecha() {
     let sliderSectionFirst = document.querySelectorAll(`.carrusel_section`)[0];
     slider.style.marginLeft = "-200%";
-    slider.style.transition = "all .5s ease";
+    slider.style.transition = "all .5s";
     setTimeout(function(){
         slider.style.transition = "none";
         slider.insertAdjacentElement(`beforeend`, sliderSectionFirst);
@@ -36,7 +36,7 @@ function moverIzquierda() {
     let sliderSectionLast = sliderSection[sliderSection.length -1];
     
     slider.style.marginLeft = "0";
-    slider.style.transition = "all .5s ease";
+    slider.style.transition = "all .5s";
     setTimeout(function(){
         slider.style.transition = "none";
         slider.insertAdjacentElement(`afterbegin`, sliderSectionLast);
