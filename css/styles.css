@@ -3,6 +3,7 @@
     --color-secundario: #254160;
     --color-tercero: #FFF;
     --color-sombra: rgba(0, 0, 0, 0.7);
+    --color-texto-primero: rgb(99, 103, 114);
   }
 
 /*-----ESTILOS GENERALES--------------*/
@@ -143,7 +144,7 @@ ul{
 /* slider o portada */
 
 .slider{
-    margin-bottom: 500px;
+    margin-bottom: 300px;
 }
 
 .cont_title{
@@ -174,6 +175,7 @@ img{
 .carrusel{
     display: flex;
     width: 400%;
+    height: 100vh;
     max-height: 100vh;
     margin-left: -100%;
 }
@@ -212,11 +214,68 @@ img{
 }
 
 .btn_carrusel_right{
-    right: 10px;
+    right: 20px;
 }
 
 .btn_carrusel_left{
-    left: 10px;
+    left: 20px;
+}
+
+/*------------MAIN-------------*/
+/*------------CONTADORES-------------*/
+
+.contadores_principal{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
+    gap: 40px;
+}
+
+.contador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contador i{
+    font-size: 60px;
+    color: var(--color-secundario);
+}
+
+.contador h2{
+    margin: 0;
+    padding: 0;
+    color: var(--color-texto-primero);
+    font-weight: 400;
+    text-align: center;
+}
+
+.contador_cantidad{
+    font-size: 60px;
+    color: var(--color-primero);
+    font-weight: 700;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ocultar{
+    opacity: 0;
+}
+
+.animar{
+    animation: aparecer 1.3s;
 }
 
 /*------------FOOTER-------------*/
