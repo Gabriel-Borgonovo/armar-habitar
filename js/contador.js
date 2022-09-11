@@ -1,6 +1,6 @@
 addEventListener(`DOMContentLoaded`, () =>{
     const contadores = document.querySelectorAll(`.contador_cantidad`);
-    const velocidad = 5000;
+    const velocidad = 7000;
 
     const animarContadores = () =>{
         for (const contador of contadores) {
@@ -23,5 +23,26 @@ addEventListener(`DOMContentLoaded`, () =>{
 
     }
 
-    animarContadores();
+    //interseptionObserver API
+
+    const mostrarContadores = elementos => {
+        elementos.forEach(elemento => {
+
+            if(elemento.isIntersecting){
+                elemento.target.classList.add(`animar`);
+                elemento.target.classList.remove(`ocultar`);
+                setTimeout(animarContadores, 700);
+            }
+            
+        });
+    }
+
+    const observer= new IntersectionObserver(mostrarContadores, {
+        threshold: 0.75
+    });
+
+    const elementosHTML = document.querySelectorAll(`.contador`);
+    elementosHTML.forEach(elementoHTML => {
+        observer.observe(elementoHTML); 
+    })
 })

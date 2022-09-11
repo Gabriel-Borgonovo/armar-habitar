@@ -263,6 +263,19 @@ img{
     font-weight: 700;
 }
 
+.texto_contador{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.texto_contador span{
+    font-size: 18px;
+    color: var(--color-texto-primero);
+    font-weight: 600;
+}
+
 @keyframes aparecer {
     0%{
         opacity: 0;
