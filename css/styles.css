@@ -175,7 +175,7 @@ img{
 .carrusel{
     display: flex;
     width: 400%;
-    height: 65vh;
+    height: 55vh;
     max-height: 100vh;
     margin-left: -100%;
 }
