@@ -144,7 +144,7 @@ ul{
 /* slider o portada */
 
 .slider{
-    margin-bottom: 180px;
+    margin-bottom: 200px;
 }
 
 .cont_title{
@@ -228,7 +228,7 @@ img{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     gap: 30px;
     width: 90%;
     margin-left: auto;
@@ -293,6 +293,63 @@ img{
 
 .animar{
     animation: aparecer 1.3s;
+}
+
+
+
+/* pruebas */
+
+.ofrecemos{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ofrecemos h2{
+    text-align: center;
+    color: var(--color-texto-primero);
+    margin-bottom: 10px;
+}
+
+.casa_llave{
+    width: 100%;
+    filter: brightness(1.2);
+    animation-name: mover;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+}
+
+.ofrecemos_article h3{
+    color: var(--color-secundario);
+    text-align: center;
+}
+
+.ofrecemos_article p{
+    color: var(--color-texto-primero);
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+@keyframes mover {
+    0%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(10px);
+    }
+    75%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 /*------------FOOTER-------------*/
@@ -409,5 +466,22 @@ img{
 
     .contador h2{
         font-size: 24px;
+    }
+
+
+    /* pruebas */
+
+    .ofrecemos{
+        
+    }
+
+    .ofrecemos_article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .casa_llave{
+        width: 50%;
     }
 }
