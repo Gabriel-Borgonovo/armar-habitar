@@ -150,6 +150,11 @@ ul{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .blur{
@@ -180,7 +185,8 @@ img{
 .contiene_carrusel{
     width: 95%;
     margin: auto;
-    margin-top: 100px;
+    top: 50%;
+    transform: translateY(-50%);
     overflow: hidden;
     box-shadow: 0 15px 50px var(--color-sombra);
     border: 5px solid var(--color-tercero);
@@ -432,7 +438,6 @@ img{
 
     .contiene_carrusel{
         width: 80%;
-        margin-top: 80px;
     }
 
     .carrusel{
@@ -514,10 +519,6 @@ img{
     }
 
     /* carrusel */
-
-    .contiene_carrusel{
-        width: 80%;
-    }
 
     .carrusel{
         height: 70vh;
