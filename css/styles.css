@@ -144,7 +144,7 @@ ul{
 /* slider o portada */
 
 .slider{
-    margin-bottom: 200px;
+    margin-bottom: 130px;
     height: 100vh;
     background-image: url(../images/sierras.jpg); 
     background-position: center;
@@ -245,6 +245,10 @@ img{
 /*------------MAIN-------------*/
 /*------------CONTADORES-------------*/
 
+main{
+    perspective: 2px;
+}
+
 .contadores_principal{
     display: flex;
     justify-content: space-evenly;
@@ -314,6 +318,35 @@ img{
 
 .animar{
     animation: aparecer 1.3s;
+}
+
+
+/*-------EFECTO PARALLAX-------*/
+
+.contiene_banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/parallax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.oscurecer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.oscurecer h2{
+    text-align: center;
+    color: var(--color-tercero);
+    position: relative;
+    top: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
 
@@ -520,8 +553,12 @@ img{
 
     /* carrusel */
 
+    .contiene_carrusel{
+        width: 70%;
+    }
+
     .carrusel{
-        height: 70vh;
+        height: 65vh;
     }
 
 }
