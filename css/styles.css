@@ -186,7 +186,7 @@ img{
     width: 95%;
     margin: auto;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     overflow: hidden;
     box-shadow: 0 15px 50px var(--color-sombra);
     border: 5px solid var(--color-tercero);
@@ -471,6 +471,7 @@ main{
 
     .contiene_carrusel{
         width: 80%;
+        transform: translateY(-50%);
     }
 
     .carrusel{
