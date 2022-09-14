@@ -146,11 +146,10 @@ ul{
 .slider{
     margin-bottom: 130px;
     height: 100vh;
-    background-image: url(../images/sierras.jpg); 
+    background-image: url(../images/sierrasb.jpg); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,7 +161,7 @@ ul{
     position: absolute;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
-}
+    }
 
 .cont_title{
     width: 100%;
@@ -337,10 +336,18 @@ main{
 .contiene_banner{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
     background-image: url(../images/parallax.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
 }
 
