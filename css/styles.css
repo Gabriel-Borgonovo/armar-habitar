@@ -340,6 +340,7 @@ main{
     overflow: hidden;
     position: relative;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 
 .banner{
@@ -359,7 +360,7 @@ main{
 }
 
 .oscurecer_textos{
-    width: 90%;
+    width: 80%;
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
@@ -455,6 +456,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .nosotros_titulos{
