@@ -4,6 +4,7 @@
     --color-tercero: #FFF;
     --color-sombra: rgba(0, 0, 0, 0.7);
     --color-texto-primero: rgb(99, 103, 114);
+    --color-p:rgb(29, 41, 53);
   }
 
 /*-----ESTILOS GENERALES--------------*/
@@ -174,7 +175,7 @@ h1{
     text-align: center;
     color: var(--color-tercero);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 35px;
     letter-spacing: 3px;
     margin: 5px;
 }
@@ -183,8 +184,8 @@ h1{
     text-align: center;
     color: var(--color-tercero);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 17px;
+    font-weight: 500;
     letter-spacing: 2px;
 }
 
@@ -404,6 +405,7 @@ main{
     color: var(--color-tercero);
 }
 
+.boton_nosotros,
 .oscurecer a{
    text-decoration: none;
    color: var(--color-tercero);
@@ -420,6 +422,7 @@ main{
    transition: all .5s ease;
 }
 
+.boton_nosotros::after,
 .oscurecer a::after{
     content: "     ->";
     font-size: 25px;
@@ -430,10 +433,12 @@ main{
     transition: all 2s ease;
 }
 
+.boton_nosotros:hover,
 .oscurecer a:hover{
     background-color: var(--color-primero);
 }
 
+.boton_nosotros:hover::after,
 .oscurecer a:hover::after{
     display: inline-block;
     
@@ -442,55 +447,78 @@ main{
 
 /* pruebas */
 
-.ofrecemos{
-    width: 90%;
+.nosotros{
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 300px;
 }
 
-.ofrecemos h2{
-    text-align: center;
+.nosotros_titulos{
+    border-left: 5px solid var(--color-primero);
+    padding-left: 10px;
+}
+
+.nosotros_titulos h2{
+    color: var(--color-secundario);
+    font-size: 35px;
+    border-bottom: 3px solid rgb(214, 218, 226);
+    width: fit-content;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+.nosotros_titulos h3{
     color: var(--color-texto-primero);
-    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 22px;
 }
 
-.casa_llave{
-    filter: brightness(1.2);
-    animation-name: mover;
+.nosotros_article p{
+    color: var(--color-p);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nosotros_article strong{
+    font-size: 25px;
+    color: var(--color-secundario);
+}
+
+.boton_nosotros{
+    color: var(--color-primero);
+    border-color: var(--color-primero);
+    animation-name: mover_boton;
     animation-duration: 3s;
     animation-timing-function: linear;
-    animation-delay: .5s;
     animation-iteration-count: infinite;
+    font-weight: 700;
+    
 }
 
-.ofrecemos_article h3{
-    color: var(--color-secundario);
-    text-align: center;
+.boton_nosotros:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-tercero);
+    border-color: var(--color-tercero);
+    box-shadow: 3px 0 20px var(--color-sombra);
 }
 
-.ofrecemos_article p{
-    color: var(--color-texto-primero);
-    padding: 0 20px;
-    font-size: 18px;
-}
-
-@keyframes mover {
+@keyframes mover_boton {
     0%{
-        transform: translateY(0);
+        transform: scale(1);
     }
-    40%{
-        transform: translateY(10px);
+    30%{
+        transform: scale(1.05);
     }
-    75%{
-        transform: translateY(-10px);
+    60%{
+        transform: scale(0.95);
     }
     100%{
-        transform: translateY(0);
+        transform: scale(1);
     }
 }
 
