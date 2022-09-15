@@ -455,7 +455,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 300px;
 }
 
 .nosotros_titulos{
@@ -526,6 +525,7 @@ main{
 
 .footer{
     background-color: var(--color-primero);
+    margin-top: 600px;
 }
 
 .footer > h2{
