@@ -484,6 +484,7 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
 .nosotros_p p{
@@ -513,11 +514,107 @@ main{
     box-shadow: 3px 0 20px var(--color-sombra);
 }
 
+
+.nosotros_opciones{
+ border: none;
+}
+
 .nosotros_ul{
-    background-color: #254160;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    gap: 30px;
+}
+
+.h2_nosotros{
+    text-align: center;
+    color: var(--color-secundario);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.nosotros_li p{
+    color: var(--color-p);
+}
+
+.nosotros_li i{
+    color: var(--color-primero);
 }
 
 
+/*------------SECCIÓN CABAÑA PREMIUM-------------*/
+
+.casa_premium{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 20px 0;
+    background-color: var(--color-primero);
+}
+
+.casa_premium_img{
+    background-image: url(../images/cab-a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 50vw;
+    max-height: 80vh;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.casa_premium_a{
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: hsla(0, 0%, 0%, 0.644);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s ease;
+}
+
+.casa_premium_a a{
+    color: var(--color-tercero);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 15px;
+    border: 3px solid var(--color-tercero);
+}
+
+.casa_premium_a a:hover{
+    background-color: var(--color-primero);
+}
+
+.casa_premium_img:hover > .casa_premium_a{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.casa_premium span{
+    color: var(--color-tercero);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.casa_premium p{
+    color: var(--color-tercero);
+    text-align: center;
+    font-size: 14px;
+}
 /*------------FOOTER-------------*/
 
 .footer{
