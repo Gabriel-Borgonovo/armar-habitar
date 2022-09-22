@@ -185,7 +185,7 @@ h1{
     color: var(--color-tercero);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 2px;
 }
 
@@ -251,6 +251,45 @@ img{
 
 .btn_carrusel_left{
     left: 20px;
+}
+
+.boton_slider{
+    position: absolute;
+    bottom: 120px;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.boton_slider a{
+    color: var(--color-tercero);
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    background-color: var(--color-primero);
+    padding: 10px 20px;
+    border: 3px solid var(--color-tercero);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px var(--color-sombra);
+    transition: all .3s ease;
+}
+
+.boton_slider .tipologias_btn{
+    background-color: rgb(173, 92, 0);
+    padding: 10px 30px;
+    
+}
+
+.boton_slider a:hover{
+    background-color: var(--color-tercero);
+    color: var(--color-p);
+    border-color: var(--color-p);
+    transform: scale(1.1);
 }
 
 /*------------MAIN-------------*/
@@ -688,14 +727,27 @@ main{
     bottom: 10px;
     z-index: 999;
     filter: saturate(2);
+    border: 3px solid var(--color-tercero);
+    border-radius: 100%;
+    animation-name: whatsapp;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     transition: all .3s ease;
 }
 
-.whatsapp_logo img:hover{
-    filter: saturate(5);
-    width: 80px;
-    border: 5px solid var(--color-tercero);
-    border-radius: 100%;
+
+@keyframes whatsapp {
+    0%{
+        width: 50px;
+    }
+    50%{
+        width: 70px;
+        filter: hue-rotate(100deg);
+    }
+    100%{
+        width: 50px;
+    }
 }
 
 
@@ -735,6 +787,11 @@ main{
 
     .carrusel{
         height: 70vh;
+    }
+
+    .boton_slider{
+        bottom: 120px;
+        width: 40%;
     }
 
     /* contadores */
