@@ -661,6 +661,24 @@ main{
     transform: scale(1.2);
 }
 
+.casa_premium_a .estrellas_premium{
+    font-size: 20px;
+    animation-name: estrellas_aparecer;
+    animation-timing-function: linear;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes estrellas_aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
 
 /* cabaña solo de troncos */
 
@@ -670,6 +688,8 @@ main{
     margin-right: auto;
     margin-top: 100px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .cab_solo_troncos img{
@@ -863,6 +883,16 @@ main{
     .casa_llave{
         width: 50%;
         border-radius: 100%;
+    }
+
+    .cab_solo_troncos{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cab_solo_troncos img{
+        width: 50%;
+        height: 410px;
     }
 }
 
