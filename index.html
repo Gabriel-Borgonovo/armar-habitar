@@ -39,7 +39,7 @@
                     <li class="nav_ul_li"><a href="#">Servicios</a></li>
                     <li class="nav_ul_li"><a href="#">Tipologías</a></li>
                     <li class="nav_ul_li"><a href="#">Cabañas</a></li>
-                    <li class="nav_ul_li"><a href="#">Contacto</a></li>
+                    <li class="nav_ul_li"><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -99,7 +99,7 @@
                     <i class="fa-solid fa-clock-rotate-left"></i>
                     <div class="texto_contador">
                         <span>En</span>
-                        <div class="contador_cantidad" data-cantidad-total="60">0</div>
+                        <div class="contador_cantidad" data-cantidad-total="90">0</div>
                     </div>
                     <h2>Dias tenes tu casa</h2>
                 </div>
@@ -263,8 +263,22 @@
 
         <footer class="footer">
 
-            <h2>Esto es el pie de página</h2>
-    
+            <div class="contiene_formulario">
+                <p>Escribinos por mail</p>
+                <form action="index.html" class="formulario" id="contacto">
+                    <input type="text" class="campo" placeholder="Nombre completo" />
+                    <input type="email" class="campo" placeholder="Email" />
+                    
+                    <textarea name="mail" id="" cols="30" rows="10" placeholder="Mensaje" class="campo text-area"></textarea>
+                    <input type="submit" class="boton_formulario" />
+                </form>
+            </div>
+
+            <div class="contiene_mapa">
+                <p>Nuestra oficina</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3396.292368560521!2d-63.898469!3d-31.65322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432cb08b3c6fbd1%3A0xdbad2e5d348c2c7a!2zQm9saXZpYSAmIFBlcsO6LCBSw61vIFNlZ3VuZG8sIEPDs3Jkb2Jh!5e0!3m2!1ses!2sar!4v1664222100655!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            </div>
+           
             <a href="https://wa.link/0v9qd3" class="whatsapp_logo" target="__BLANK">
                 <img src="./icons/whatsapp.png" alt="Whatsapp" title="Whatsapp" />
             </a>
