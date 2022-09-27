@@ -563,6 +563,56 @@ main{
 }
 
 
+/* redes sociales */
+
+.redes_li{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.redes_li h3{
+    color: var(--color-secundario);
+    text-transform: uppercase;
+    font-weight: 800;
+    border-bottom: 3px solid var(--color-primero);
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.redes i{
+    font-size: 45px;
+    transition: all .3s ease;
+}
+
+.redes .facebook{
+    color: #3b5998;
+}
+
+.redes .youtube{
+    color: #c4302b;
+}
+
+.redes .instagram{
+    color: #ffffff;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.redes i:hover{
+    transform: scale(1.3) ;
+    filter: brightness(1.2);
+}
+
+
 /*------------SECCIÓN CABAÑA PREMIUM-------------*/
 
 .casa_premium{
@@ -759,6 +809,56 @@ main{
 
 .cab_solo_troncos_textos .boton_troncos:hover{
     background-color: var(--color-primero);
+}
+
+
+/* sección consideraciones */
+
+.contiene_consideraciones{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contiene_consideraciones img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.consideraciones_textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 22px 30px;
+    background-color:  rgb(214, 213, 210);
+}
+
+.consideraciones_textos h2{
+    color: var(--color-secundario);
+    padding-left: 10px;
+    border-left: 5px solid var(--color-primero);
+}
+
+.consideraciones_textos p{
+    color: var(--color-p);
+    font-weight: 500;
+}
+
+.consideraciones_textos ol{
+    margin: 0;
+}
+
+.consideraciones_ol li{
+    color: var(--color-p);
+    font-size: 18px;
+    font-weight: 500;
 }
 
 
@@ -988,6 +1088,8 @@ main{
         border-radius: 100%;
     }
 
+    /* solo troncos */
+
     .cab_solo_troncos{
         flex-direction: row;
         justify-content: center;
@@ -996,6 +1098,20 @@ main{
     .cab_solo_troncos img{
         width: 50%;
         height: 410px;
+    }
+
+      /* consideraciones */
+
+    .contiene_consideraciones{
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .contiene_consideraciones img{
+        width: 50%;
+        height: 410px;
+        order: 1;
     }
 }
 
